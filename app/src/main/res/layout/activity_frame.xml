@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:background="#E32E6B"
+            android:text="Hello World!"
+            android:layout_gravity="center_horizontal"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:layout_height="30dp"/>
+        
+        
+        <com.example.animationdemo.MyPointView
+            android:id="@+id/pointview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_play_value_anim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="播放Value动画" />
+
+        <Button
+            android:id="@+id/btn_play_object_anim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="播放Object动画" />
+        <Button
+            android:id="@+id/btn_play_self_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="播放自定义View" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

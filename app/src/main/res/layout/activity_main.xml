@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_frame"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"/>
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_frame"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/ic_launcher" />
+    <Button
+        android:id="@+id/btn_interpolator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_attribute"
+        android:text="跳转插值器界面"
+        />
+    <Button
+        android:id="@+id/btn_attribute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_frame"
+        android:text="跳转Activity动画"
+        />
+    <Button
+        android:id="@+id/btn_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_tween_group2"
+        android:text="传统帧动画" />
+
+    <Button
+        android:id="@+id/btn_tween_group2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_tween_group"
+        android:text="动画集合" />
+    <Button
+        android:id="@+id/btn_tween_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tween"
+        android:text="顺序动画"/>
+
+    <LinearLayout
+        android:id="@+id/tween"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_tween_alpha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            android:text="透明" />
+        <Button
+            android:id="@+id/btn_tween_trans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            android:text="位移" />
+
+        <Button
+            android:id="@+id/btn_tween_scale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            android:text="缩小放大" />
+        <Button
+            android:id="@+id/btn_tween_rotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            android:text="旋转" />
+
+    </LinearLayout>
+</RelativeLayout>
